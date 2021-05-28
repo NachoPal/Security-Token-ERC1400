@@ -1,0 +1,24 @@
+{
+  "name": "SecurityToken",
+  "version": "1.0.0",
+  "description": "SecurityToken",
+  "author": "Ignacio Palacios Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "web3": "1.0.0-beta.35"
+  },
+  "scripts": {
+    "chain": "ganache-cli -a 50 -m 'above decline twin original artefact debate fade duck fossil enact sorry there'",
+    "test-development": "truffle test ./test/1_security_token_test.js --network development",
+    "deploy_quorum": "truffle migrate --network security_node",
+    "deploy_rinkeby": "truffle migrate --network rinkeby",
+    "cost": "truffle test ./test/2_gas_consumption_test.js",
+    "redeem": "truffle test ./test/3_redemption_test.js"
+  },
+  "dependencies": {
+    "colors": "^1.3.3"
+  }
+}
